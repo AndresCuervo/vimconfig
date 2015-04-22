@@ -7,4 +7,5 @@ alias shed='ssh lucid@ajlc.csr.oberlin.edu'
 alias shclyde='ssh acuervo@clyde.cs.oberlin.edu'
 
 alias dtruss='sudo dtruss'
+alias dtrace='sudo dtrace'
 alias cdvg='cd ~/Documents/webProjects/p5/videoGame && cl'
