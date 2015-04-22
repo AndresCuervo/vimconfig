@@ -1,0 +1,7 @@
+#include <stdio.h>
+
+int main () {
+    long foo;
+    foo = (long) "0b00000001";
+    printf("%lu", foo);
+}

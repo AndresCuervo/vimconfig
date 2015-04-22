@@ -1,0 +1,21 @@
+
+'use strict';
+function Preload() {
+  this.asset = null;
+  this.ready = false;
+}
+
+Preload.prototype = {
+  preload: function() {
+      game.load.image('player', 'assets/player.png');
+  },
+  create: function() {
+  },
+  update: function() {
+  },
+  onLoadComplete: function() {
+    this.ready = true;
+  }
+};
+
+module.exports = Preload;

@@ -1,0 +1,10 @@
+all: format getline
+
+format: format.c
+	gcc -o format format.c -lm
+
+getline: getline.c
+	gcc -o getline getline.c -lm
+
+clean:
+	rm -f *.o format

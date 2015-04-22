@@ -1,0 +1,14 @@
+Host bookcoop bookcoop.org
+Hostname bookcoop.org
+IdentityFile ~/.ssh/bookcoop_rsa
+User bookcoop
+
+Host csoberlin cs.oberlin.edu
+Hostname cs.oberlin.edu
+IdentityFile ~/.ssh/csoberlin_rsa
+User acuervo
+
+Host cwervo cwervo.com
+Hostname cwervo.com
+IdentityFile ~/.ssh/cwervo_rsa
+User tinycarr

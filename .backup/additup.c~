@@ -1,0 +1,17 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+struct BigInt {
+    int digit;
+    struct BigInt *next, *prev;
+};
+
+void getInput() {
+    printf("%7s\n", "");
+
+}
+
+int main () {
+    getInput();
+    exit(0);
+}
