@@ -178,5 +178,5 @@ set complete=.,w,b,u,U
 " --------------
 
 " Save & restore folds.
-autocmd BufWinLeave * mkview
-autocmd BufWinEnter * loadview
+autocmd BufWinLeave ?* mkview
+autocmd BufWinEnter ?* loadview
