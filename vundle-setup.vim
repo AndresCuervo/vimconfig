@@ -65,15 +65,6 @@ Plugin 'tpope/vim-surround'
 Plugin 'tpope/vim-unimpaired'
 Plugin 'Valloric/ListToggle'
 Plugin 'Valloric/MatchTagAlways'
-"------- YouCompleteMe Notes -------------
-" Remember: YCM is a plugin with a compiled component. If you update YCM using
-" Vundle and the ycm_support_libs library APIs have changed (happens rarely),
-" YCM will notify you to recompile it. You should then rerun the install
-" process. Run:
-" cd ~/.vim/bundle/YouCompleteMe && ./install.sh --clang-completer
-"    --omnisharp-completer
-Plugin 'Valloric/YouCompleteMe' "Can't be run on CS server from SSH
-" ------- End YCM Notes ------------------
 Plugin 'vim-scripts/Auto-Pairs'
 Plugin 'vim-scripts/google.vim'
 Plugin 'vim-scripts/HelpClose'
