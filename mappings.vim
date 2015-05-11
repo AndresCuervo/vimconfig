@@ -42,8 +42,11 @@ map <leader>b :bd<cr>"
 " <space>c clears search highlighting
 nnoremap <leader>c :noh<cr>
 
-" Remap Emmet expansion to 'hh,'
+" Remap Emmet expansion to hh making the expansion hh,
 let g:user_emmet_leader_key='hh'
+
+" <space>e expands emmet abbreviations.
+map <leader>e hh,
 
 " Insist that the Explore tree (<Space>k) is in mode 3 (personal preference)
 let g:netrw_liststyle=3
