@@ -140,12 +140,25 @@ setlocal nowinfixwidth
 setlocal nowrap
 setlocal wrapmargin=0
 silent! normal! zE
-168,174fold
-let s:l = 168 - ((21 * winheight(0) + 18) / 36)
+25,36fold
+39,50fold
+53,66fold
+69,90fold
+93,113fold
+116,127fold
+130,138fold
+141,164fold
+167,171fold
+174,180fold
+183,188fold
+174,188fold
+174
+normal! zo
+let s:l = 1 - ((0 * winheight(0) + 18) / 37)
 if s:l < 1 | let s:l = 1 | endif
 exe s:l
 normal! zt
-168
+1
 normal! 0
 let &so = s:so_save | let &siso = s:siso_save
 doautoall SessionLoadPost

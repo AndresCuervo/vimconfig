@@ -21,7 +21,9 @@ if $TERM =~ "-256color"
 endif
 set encoding=utf-8
 
+" --------------
 " Sytastic stuff
+" --------------
 
 " Enable Syntastic to automatically load errors into the location list
 let g:syntastic_always_populate_loc_list = 1
@@ -33,6 +35,9 @@ let g:syntastic_check_on_open = 1
 let g:syntastic_error_symbol = "✗"
 let g:syntastic_warning_symbol = "⚠"
 
+" ---------------
+" Airline Setings
+" --------------
 " Add vim-airline buffer list to the top of Vim
 let g:airline#extensions#tabline#enabled = 1
 
@@ -44,7 +49,7 @@ let g:airline_theme = 'base16'
 " let g:airline_theme = 'wombat'
 " let g:airline_theme = 'light'
 
-" -----------------------------
+" ---------------
 " File Locations
 " -----------------------------
 set backup
@@ -59,6 +64,7 @@ if has('persistent_undo')
     set undofile
     set undodir=~/.vim/.undo
 endif
+
 " ---------------
 " UI
 " ---------------
