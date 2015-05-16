@@ -1,7 +1,7 @@
 " Modified version of:
 " https://github.com/mutewinter/dot_vim/blob/master/config.vim
 " ---------------------------------------------
-" Regular Vim Configuration (No Plugins Needed)
+" Regular Vim Configuration
 " ---------------------------------------------
 "
 " ---------------
@@ -80,13 +80,6 @@ set noshowmode     " Don't show the mode since Powerline shows it
 set title          " Set the title of the window in the terminal to the file
 if exists('+colorcolumn')
     set colorcolumn=80 " Color the 80th column differently as a wrapping guide.
-endif
-" Disable tooltips for hovering keywords in Vim
-if exists('+ballooneval')
-    " This doesn't seem to stop tooltips for Ruby files
-    set noballooneval
-    " 100 second delay seems to be the only way to disable the tooltips
-    set balloondelay=100000
 endif
 
 " ---------------

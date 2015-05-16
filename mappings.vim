@@ -21,7 +21,7 @@ map <C-l> <C-W>l
 map <Tab> :bnext<CR>
 map <S-Tab> :bprevious<CR>
 
-" Go to Normal mode with jk
+" Bind <Esc> to jk
 inoremap jk <Esc>
 vnoremap v <Esc>
 
@@ -45,8 +45,8 @@ nnoremap <leader>c :noh<cr>
 " Remap Emmet expansion to hh making the expansion hh,
 let g:user_emmet_leader_key='hh'
 
-" <space>e expands emmet abbreviations.
-map <leader>e hh,
+" <space>e expands Emmet abbreviations.
+map <leader>e $hh,
 
 " Insist that the Explore tree (<Space>k) is in mode 3 (personal preference)
 let g:netrw_liststyle=3
