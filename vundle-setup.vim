@@ -57,11 +57,14 @@ Plugin 'othree/html5.vim'
 Plugin 'pangloss/vim-javascript'
 " Markdown syntax
 Plugin 'plasticboy/vim-markdown'
+" Autocomplete brackets, parens, and quotes
 Plugin 'Raimondi/delimitMate'
 " Really fast searching!
 Plugin 'rking/ag.vim'
 " Gr8 syntax highlighting
 Plugin 'scrooloose/syntastic'
+" Coffescript & other JS support
+Plugin 'kchmck/vim-coffee-script'
 " Utilisnips for vim
 Plugin 'SirVer/ultisnips'
 " A better Join command with delimiter options, repeatable counts, and revere
