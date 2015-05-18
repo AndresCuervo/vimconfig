@@ -136,6 +136,7 @@ exe s:l
 normal! zt
 4
 normal! 0
+lcd ~/.vim
 let &so = s:so_save | let &siso = s:siso_save
 doautoall SessionLoadPost
 " vim: set ft=vim :

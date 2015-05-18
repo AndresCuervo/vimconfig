@@ -65,6 +65,8 @@ Plugin 'rking/ag.vim'
 Plugin 'scrooloose/syntastic'
 " Coffescript & other JS support
 Plugin 'kchmck/vim-coffee-script'
+" JS Syntax Checker
+Plugin 'feross/standard'
 " Utilisnips for vim
 Plugin 'SirVer/ultisnips'
 " A better Join command with delimiter options, repeatable counts, and revere

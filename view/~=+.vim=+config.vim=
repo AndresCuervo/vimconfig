@@ -4,10 +4,10 @@ let s:cpo_save=&cpo
 set cpo&vim
 imap <buffer> <S-BS> <Plug>delimitMateS-BS
 inoremap <buffer> <silent> <BS> =AutoPairsDelete()
-inoremap <buffer> <silent> å =AutoPairsFastWrap()
-inoremap <buffer> <silent> â =AutoPairsBackInsert()
-inoremap <buffer> <silent> <expr> ð AutoPairsToggle()
 inoremap <buffer> <silent> î :call AutoPairsJump()a
+inoremap <buffer> <silent> <expr> ð AutoPairsToggle()
+inoremap <buffer> <silent> â =AutoPairsBackInsert()
+inoremap <buffer> <silent> å =AutoPairsFastWrap()
 vnoremap <buffer> <silent> [" :exe "normal! gv"|call search('\%(^\s*".*\n\)\%(^\s*"\)\@!', "bW")
 nnoremap <buffer> <silent> [" :call search('\%(^\s*".*\n\)\%(^\s*"\)\@!', "bW")
 vnoremap <buffer> <silent> [] m':exe "normal! gv"|call search('^\s*endf*\%[unction]\>', "bW")
@@ -27,8 +27,8 @@ inoremap <buffer> <silent> " =AutoPairsInsert('"')
 inoremap <buffer> <silent> ' =AutoPairsInsert('''')
 inoremap <buffer> <silent> ( =AutoPairsInsert('(')
 inoremap <buffer> <silent> ) =AutoPairsInsert(')')
-noremap <buffer> <silent> ð :call AutoPairsToggle()
 noremap <buffer> <silent> î :call AutoPairsJump()
+noremap <buffer> <silent> ð :call AutoPairsToggle()
 inoremap <buffer> <silent> [ =AutoPairsInsert('[')
 inoremap <buffer> <silent> ] =AutoPairsInsert(']')
 inoremap <buffer> <silent> ` =AutoPairsInsert('`')
@@ -141,28 +141,30 @@ setlocal nowrap
 setlocal wrapmargin=0
 silent! normal! zE
 8,22fold
-25,38fold
-41,52fold
-55,68fold
-71,85fold
-88,108fold
-111,122fold
-125,135fold
-138,161fold
-164,164fold
-164,168fold
-171,177fold
-180,185fold
-164
+25,39fold
+42,53fold
+56,69fold
+72,86fold
+89,109fold
+112,123fold
+126,136fold
+139,162fold
+165,165fold
+165,169fold
+172,178fold
+181,186fold
+25
 normal! zo
-164
+165
+normal! zo
+165
 normal! zc
-let s:l = 34 - ((29 * winheight(0) + 18) / 37)
+let s:l = 35 - ((32 * winheight(0) + 18) / 37)
 if s:l < 1 | let s:l = 1 | endif
 exe s:l
 normal! zt
-34
-normal! 0
+35
+normal! 059|
 lcd ~/.vim
 let &so = s:so_save | let &siso = s:siso_save
 doautoall SessionLoadPost

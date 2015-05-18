@@ -13,8 +13,8 @@ inoremap <buffer> <silent> å =AutoPairsFastWrap()
 nnoremap <buffer> D :exec 'Delete'.getline('.')
 nnoremap <buffer> I :exec 'InstallAndRequire'.substitute(getline('.'), '^Plugin ', 'Plugin! ', '')
 nnoremap <buffer> R :call vundle#scripts#reload()
-nnoremap <buffer> add! :exec 'Install'.substitute(getline('.'), '^Plugin ', 'Plugin! ', '')
 nnoremap <buffer> add :exec 'Install'.getline('.')
+nnoremap <buffer> add! :exec 'Install'.substitute(getline('.'), '^Plugin ', 'Plugin! ', '')
 nnoremap <buffer> c :PluginClean
 nnoremap <buffer> h :h vundle
 nnoremap <buffer> i :exec 'InstallAndRequire'.getline('.')
@@ -141,11 +141,11 @@ setlocal winfixheight
 setlocal nowinfixwidth
 setlocal nowrap
 setlocal wrapmargin=0
-let s:l = 57 - ((36 * winheight(0) + 18) / 37)
+let s:l = 58 - ((36 * winheight(0) + 18) / 37)
 if s:l < 1 | let s:l = 1 | endif
 exe s:l
 normal! zt
-57
+58
 normal! 0
 lcd ~/.vim
 let &so = s:so_save | let &siso = s:siso_save

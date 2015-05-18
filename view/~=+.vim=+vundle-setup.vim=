@@ -140,13 +140,13 @@ setlocal nowinfixwidth
 setlocal nowrap
 setlocal wrapmargin=0
 silent! normal! zE
-118,123fold
+120,125fold
 let s:l = 67 - ((21 * winheight(0) + 18) / 37)
 if s:l < 1 | let s:l = 1 | endif
 exe s:l
 normal! zt
 67
-normal! 033|
+normal! 019|
 lcd ~/.vim
 let &so = s:so_save | let &siso = s:siso_save
 doautoall SessionLoadPost
