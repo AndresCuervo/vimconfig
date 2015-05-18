@@ -59,7 +59,7 @@ setlocal nocopyindent
 setlocal cryptmethod=
 setlocal nocursorbind
 setlocal nocursorcolumn
-setlocal cursorline
+setlocal nocursorline
 setlocal define=
 setlocal dictionary=
 setlocal nodiff
@@ -140,12 +140,14 @@ setlocal nowinfixwidth
 setlocal nowrap
 setlocal wrapmargin=0
 silent! normal! zE
-let s:l = 87 - ((10 * winheight(0) + 8) / 16)
+115,120fold
+let s:l = 1 - ((0 * winheight(0) + 18) / 37)
 if s:l < 1 | let s:l = 1 | endif
 exe s:l
 normal! zt
-87
+1
 normal! 0
+lcd ~/.vim
 let &so = s:so_save | let &siso = s:siso_save
 doautoall SessionLoadPost
 " vim: set ft=vim :

@@ -50,3 +50,16 @@ map <leader>e $hh,
 
 " Insist that the Explore tree (<Space>k) is in mode 3 (personal preference)
 let g:netrw_liststyle=3
+
+let g:multi_cursor_quit_key='<Esc>'
+
+" Anzu settings
+nmap n <Plug>(anzu-n-with-echo)
+nmap N <Plug>(anzu-N-with-echo)
+nmap * <Plug>(anzu-star-with-echo)
+nmap # <Plug>(anzu-sharp-with-echo)
+
+" Clear search
+nmap <Esc><Esc> <Plug>(anzu-clear-search-status)
+
+
