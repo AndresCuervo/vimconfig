@@ -128,11 +128,11 @@ setlocal nowinfixwidth
 setlocal nowrap
 setlocal wrapmargin=0
 silent! normal! zE
-let s:l = 140 - ((29 * winheight(0) + 18) / 37)
+let s:l = 139 - ((28 * winheight(0) + 18) / 37)
 if s:l < 1 | let s:l = 1 | endif
 exe s:l
 normal! zt
-140
+139
 normal! 013|
 lcd ~/.vim
 let &so = s:so_save | let &siso = s:siso_save

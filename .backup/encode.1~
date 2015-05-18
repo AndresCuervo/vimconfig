@@ -1,0 +1,21 @@
+.\" Man page for encode program
+.\" Cuervo & Oge - Spring 2015
+
+.TH encode 1 "17 March 2015" "CSCI 241" "Oberlin College"
+
+.SH NAME
+.B encode
+\- a program to encode your files!
+
+.SH SYNOPSIS
+.B ./encode
+[include a filename]
+
+.SH DESCRIPTION
+This program encodes from standard input, can be redirected to a file to write the encoded version.
+
+.SH AUTHORS
+Andres Cuervo and Alexandre Oge (Spring 2015)
+
+.SH BUGS
+    None!

@@ -1,10 +1,9 @@
-all: format getline
+all: shell
 
-format: format.c
-	gcc -o format format.c -lm
-
-getline: getline.c
-	gcc -o getline getline.c -lm
+shell: shell.c
+	gccx shell.c -o shell
 
 clean:
-	rm -f *.o format
+	rm -f shell
+
+.PHONIES: clean

@@ -1,0 +1,14 @@
+3,8c3,5
+< TOTAL=0
+< while [ $# -gt 0  ]; do
+<     WORDS=`wc -w ${1}`
+<     TOTAL=`expr "${TOTAL}" + "${WORDS}"`
+<     `echo ${TOTAL}`
+<     shift
+---
+> for a in "$@"
+> do
+>     echo $a
+9a7,8
+> 
+> 

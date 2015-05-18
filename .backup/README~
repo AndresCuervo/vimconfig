@@ -1,1 +1,16 @@
-Andres S. Cuervo's Vim config
+Andres Cuervo & Axandre Oge
+CS241
+HW 9
+
+We were able to fully complete requirements 1 - 7.
+
+Concerning point 8, we have support for < redirection, but unfortunately > redirection is still proving a problem for us.
+
+Unfortunately, we were also unable to do | redirection of any kind (points 10 and 11).
+
+This README and the associated Makefile satisfy point 11.
+
+We added color and the CWD above to typable area so a user (e.g. you) can quickly
+see critical information. This is modeled after themes from the OhMyZSH! theme project.
+
+I affirm that I have adhered to the Honor Code on this assignment.

@@ -1,0 +1,21 @@
+.\" Man page for decode program
+.\" Cuervo & Oge - Spring 2015
+
+.TH decode 1 "17 March 2015" "CSCI 241" "Oberlin College"
+
+.SH NAME
+.B decode
+\- a program to decode your files!
+
+.SH SYNOPSIS
+.B ./decode
+[include a filename]
+
+.SH DESCRIPTION
+This program decodes from standard input, can be redirected to a file to write the decoded version.
+
+.SH AUTHORS
+Andres Cuervo and Alexandre Oge (Spring 2015)
+
+.SH BUGS
+    None!
