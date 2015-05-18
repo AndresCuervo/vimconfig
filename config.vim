@@ -19,7 +19,6 @@ colorscheme jellybeans
 if $TERM =~ "-256color"
     set t_Co=256
 endif
-set encoding=utf-8
 
 " --------------
 " Sytastic stuff

@@ -69,7 +69,7 @@ setlocal expandtab
 if &filetype != 'vim'
 setlocal filetype=vim
 endif
-setlocal foldcolumn=0
+setlocal foldcolumn=1
 setlocal foldenable
 setlocal foldexpr=0
 setlocal foldignore=#
@@ -140,28 +140,23 @@ setlocal nowinfixwidth
 setlocal nowrap
 setlocal wrapmargin=0
 silent! normal! zE
-8,22fold
-25,37fold
-40,51fold
-54,67fold
-70,84fold
-87,107fold
-110,121fold
-124,134fold
-137,160fold
-163,163fold
-163,167fold
-170,176fold
-179,184fold
-163
-normal! zo
-163
-normal! zc
-let s:l = 25 - ((19 * winheight(0) + 10) / 21)
+8,21fold
+24,36fold
+39,50fold
+53,66fold
+69,83fold
+86,106fold
+109,120fold
+123,133fold
+136,159fold
+162,166fold
+169,175fold
+178,183fold
+let s:l = 19 - ((18 * winheight(0) + 18) / 37)
 if s:l < 1 | let s:l = 1 | endif
 exe s:l
 normal! zt
-25
+19
 normal! 0
 lcd ~/.vim
 let &so = s:so_save | let &siso = s:siso_save

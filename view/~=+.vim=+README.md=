@@ -4,10 +4,10 @@ let s:cpo_save=&cpo
 set cpo&vim
 imap <buffer> <S-BS> <Plug>delimitMateS-BS
 inoremap <buffer> <silent> <BS> =AutoPairsDelete()
-inoremap <buffer> <silent> å =AutoPairsFastWrap()
-inoremap <buffer> <silent> â =AutoPairsBackInsert()
-inoremap <buffer> <silent> <expr> ð AutoPairsToggle()
 inoremap <buffer> <silent> î :call AutoPairsJump()a
+inoremap <buffer> <silent> <expr> ð AutoPairsToggle()
+inoremap <buffer> <silent> â =AutoPairsBackInsert()
+inoremap <buffer> <silent> å =AutoPairsFastWrap()
 vmap <buffer> [] <Plug>(Markdown_MoveToPreviousSiblingHeader)
 nmap <buffer> [] <Plug>(Markdown_MoveToPreviousSiblingHeader)
 vmap <buffer> [[ <Plug>(Markdown_MoveToPreviousHeader)
@@ -29,8 +29,8 @@ inoremap <buffer> <silent> " =AutoPairsInsert('"')
 inoremap <buffer> <silent> ' =AutoPairsInsert('''')
 inoremap <buffer> <silent> ( =AutoPairsInsert('(')
 inoremap <buffer> <silent> ) =AutoPairsInsert(')')
-noremap <buffer> <silent> ð :call AutoPairsToggle()
 noremap <buffer> <silent> î :call AutoPairsJump()
+noremap <buffer> <silent> ð :call AutoPairsToggle()
 inoremap <buffer> <silent> [ =AutoPairsInsert('[')
 inoremap <buffer> <silent> ] =AutoPairsInsert(']')
 inoremap <buffer> <silent> ` =AutoPairsInsert('`')
@@ -71,7 +71,7 @@ setlocal expandtab
 if &filetype != 'mkd'
 setlocal filetype=mkd
 endif
-setlocal foldcolumn=0
+setlocal foldcolumn=1
 setlocal foldenable
 setlocal foldexpr=Foldexpr_markdown(v:lnum)
 setlocal foldignore=#
