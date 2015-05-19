@@ -152,11 +152,11 @@ silent! normal! zE
 162,166fold
 169,175fold
 178,183fold
-let s:l = 19 - ((18 * winheight(0) + 18) / 37)
+let s:l = 6 - ((5 * winheight(0) + 18) / 37)
 if s:l < 1 | let s:l = 1 | endif
 exe s:l
 normal! zt
-19
+6
 normal! 0
 lcd ~/.vim
 let &so = s:so_save | let &siso = s:siso_save

@@ -136,7 +136,7 @@ set statusline=%{anzu#search_status()}
 " Visual
 " ---------------
 highlight LineNr ctermfg=30
-highlight cursorline ctermbg=0
+highlight cursorline term=underline cterm=underline guibg=Grey30 ctermbg=0
 set showmatch   " Show matching brackets.
 set matchtime=2 " How many tenths of a second to blink
 " Show invisible characters
