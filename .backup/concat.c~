@@ -1,9 +1,0 @@
-#include <stdio.h>
-
-int main () {
-    while (1 == 1) {
-        printf("Give me a couple numbers: ");
-        int text = getchar();
-        printf("Your number was: %d\n", text);
-    }
-}

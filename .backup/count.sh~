@@ -1,9 +1,0 @@
-#!/bin/sh
-
-TOTAL=0
-while [ $# -gt 0  ]; do
-    WORDS=`wc -w ${1}`
-    TOTAL=`expr ${TOTAL}+ ${WORDS}`
-    `echo ${TOTAL}`
-    shift
-done
