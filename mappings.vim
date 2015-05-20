@@ -53,21 +53,11 @@ let g:netrw_liststyle=3
 
 let g:multi_cursor_quit_key='<Esc>'
 
-" Adding magiv to searching! Basically Extended REgular EXpressions!
-nnoremap / /\v
-vnoremap / /\v
-cnoremap %s/ %smagic/
-cnoremap \>s/ \>smagic/
-nnoremap :g/ :g/\v
-nnoremap :g// :g//
-
-" Anzu mappings
+" Anzu search mappings
 nmap n <Plug>(anzu-n-with-echo)
 nmap N <Plug>(anzu-N-with-echo)
 nmap * <Plug>(anzu-star-with-echo)
 nmap # <Plug>(anzu-sharp-with-echo)
-
-" Clear search
 nmap <Esc><Esc> <Plug>(anzu-clear-search-status)
 
 
