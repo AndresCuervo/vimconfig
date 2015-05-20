@@ -85,7 +85,7 @@ syntax enable
 set wildmenu            " visual autocomplete for command menu
 set hidden             " Change buffer - without saving
 set history=300         " Number of things to remember in history.
-set cf                 " Enable error files & error jumping.
+set cf                 " Enable error files & error jumping, this is what makes prompt on exit!
 set clipboard=unnamed " Yanks go on clipboard instead.
 set autowrite          " Writes on make/shell commands
 set ttimeout
