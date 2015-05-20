@@ -56,14 +56,10 @@ set backup
 set backupdir=~/.vim/.backup// " Double // causes backups to use full file path
 set directory=~/.vim/.tmp//
 set writebackup
-" I commented out the two above because it doesn't work
-"properly on my Mac OSX Yosemite Terminal, don't know why, and don't care.
 set spellfile=~/.vim/spell/custom.en.utf-8.add
 " Persistent Undo
-if has('persistent_undo')
-    set undofile
-    set undodir=~/.vim/.undo
-endif
+set undodir=~/.vim/.undo
+set undofile
 
 " ---------------
 " UI
