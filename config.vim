@@ -133,6 +133,19 @@ set wildignore+=*.o,*.obj,*.exe,*.so,*.dll,*.pyc,.svn,.hg,.bzr,.git,
 " Anzi Search statusline
 set statusline=%{anzu#search_status()}
 
+" Allow visual mode to search with * (forward-looking) and # (backward-looking)
+" Taken from:
+" http://got-ravings.blogspot.com/2008/07/vim-pr0n-visual-search-mappings.html
+function! s:VSetSearch()
+    let temp = @@
+    norm! gvy
+    let @/ = '\V' . substitute(escape(@@, '\'), '\n', '\\n', 'g')
+    let @@ = temp
+endfunction
+
+vnoremap * :<C-u>call <SID>VSetSearch()<CR>//<CR>
+vnoremap # :<C-u>call <SID>VSetSearch()<CR>??<CR>)
+
 " ---------------
 " Visual
 " ---------------
