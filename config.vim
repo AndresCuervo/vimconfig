@@ -10,7 +10,7 @@
 set background=dark
 colorscheme jellybeans
 " colorscheme seoul256 " Really nice, but the overall low-contrast feel is
-" really stiffling for me to read my code, I prefer jellybeans' readability.
+" really stifling for me to read my code, I prefer jellybeans' readability.
 " let g:seoul256_background = 234
 " let g:solarized_termtrans = 1
 " let g:solarized_underline = 0
@@ -56,7 +56,7 @@ set backup
 set backupdir=~/.vim/.backup// " Double // causes backups to use full file path
 set directory=~/.vim/.tmp//
 set writebackup
-" I commented out the two above becasue it doesn't work
+" I commented out the two above because it doesn't work
 "properly on my Mac OSX Yosemite Terminal, don't know why, and don't care.
 set spellfile=~/.vim/spell/custom.en.utf-8.add
 " Persistent Undo
@@ -125,6 +125,7 @@ set expandtab " tabs are spaces"
 set ignorecase " Case insensitive search
 set smartcase  " Non-case sensitive search
 set incsearch  " Incremental search
+set infercase " infer the case of the match based on the current item.
 set hlsearch   " Highlight search results
 set wildignore+=*.o,*.obj,*.exe,*.so,*.dll,*.pyc,.svn,.hg,.bzr,.git,
             \.sass-cache,*.class,*.scssc,*.cssc,sprockets%*,*.lessc,*/node_modules/*,
@@ -136,7 +137,7 @@ set statusline=%{anzu#search_status()}
 " Visual
 " ---------------
 highlight LineNr ctermfg=30
-highlight cursorline term=underline cterm=underline guibg=Grey30 ctermbg=0
+highlight cursorline term=underline cterm=underline
 set showmatch   " Show matching brackets.
 set matchtime=2 " How many tenths of a second to blink
 " Show invisible characters
