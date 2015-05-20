@@ -91,6 +91,7 @@ set autowrite          " Writes on make/shell commands
 set ttimeout
 set ttimeoutlen=100    " Time to wait for a command (after leader for example).
 set formatoptions=crql
+set nrformats= " Disable Vim's default (oct, hex), which make 07 an octal.
 set iskeyword+=\$,-   " Add extra characters that are valid parts of variables
 set nostartofline      " Don't go to the start of the line after some commands
 set scrolloff=99        " Keep 99 lines below the last line when scrolling, effectively shifting the middle of the screen on scroll.
