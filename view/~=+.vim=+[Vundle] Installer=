@@ -2,15 +2,15 @@ let s:so_save = &so | let s:siso_save = &siso | set so=0 siso=0
 argglobal
 let s:cpo_save=&cpo
 set cpo&vim
-imap <buffer> <BS> <Plug>delimitMateBS
 imap <buffer> <S-BS> <Plug>delimitMateS-BS
+imap <buffer> <BS> <Plug>delimitMateBS
 nnoremap <buffer> ? :norm h
 nnoremap <buffer> C :PluginClean!
 nnoremap <buffer> D :exec 'Delete'.getline('.')
 nnoremap <buffer> I :exec 'InstallAndRequire'.substitute(getline('.'), '^Plugin ', 'Plugin! ', '')
 nnoremap <buffer> R :call vundle#scripts#reload()
-nnoremap <buffer> add :exec 'Install'.getline('.')
 nnoremap <buffer> add! :exec 'Install'.substitute(getline('.'), '^Plugin ', 'Plugin! ', '')
+nnoremap <buffer> add :exec 'Install'.getline('.')
 nnoremap <buffer> c :PluginClean
 nnoremap <buffer> h :h vundle
 nnoremap <buffer> i :exec 'InstallAndRequire'.getline('.')
