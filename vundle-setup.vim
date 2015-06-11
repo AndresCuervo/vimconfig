@@ -129,6 +129,8 @@ Plugin 'mattn/flappyvird-vim'
 Plugin 'ap/vim-css-color'
 " Open man page for word under cursor with <space>kk
 Plugin 'ludwig/split-manpage.vim'
+" Editor Config for consistency
+Plugin 'editorconfig/editorconfig-vim'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required

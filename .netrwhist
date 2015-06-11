@@ -1,10 +1,7 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =8
-let g:netrw_dirhist_1='/Users/tiny/.vim/bundle'
-let g:netrw_dirhist_2='/Users/tiny/.vim/bundle/Auto-Pairs'
-let g:netrw_dirhist_3='/Users/tiny/.vim'
-let g:netrw_dirhist_4='/Users/tiny/.vim/.tmp'
-let g:netrw_dirhist_5='/Users/tiny/.vim/.git'
-let g:netrw_dirhist_6='/Users/tiny/.vim/bundle'
-let g:netrw_dirhist_7='/Users/tiny/.vim/view'
-let g:netrw_dirhist_8='/Users/tiny/.config'
+let g:netrw_dirhist_cnt =5
+let g:netrw_dirhist_1='/Users/tiny/Documents/webProjects/codeNow/blog'
+let g:netrw_dirhist_2='/Users/tiny/Documents/webProjects/codeNow/blog/2013'
+let g:netrw_dirhist_3='/Users/tiny/Documents/webProjects/codeNow/blog/2013/09'
+let g:netrw_dirhist_4='/Users/tiny/Documents/webProjects/codeNow/blog/2013/09/28'
+let g:netrw_dirhist_5='/Users/tiny/Documents/webProjects/codeNow/blog/2013/09/28/test'

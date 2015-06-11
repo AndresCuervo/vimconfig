@@ -143,7 +143,7 @@ exe s:l
 normal! zt
 10
 normal! 0
-lcd ~/
+lcd /Applications/MAMP/htdocs/codeNow/sass
 let &so = s:so_save | let &siso = s:siso_save
 doautoall SessionLoadPost
 " vim: set ft=vim :
