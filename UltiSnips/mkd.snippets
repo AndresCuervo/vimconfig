@@ -1,0 +1,39 @@
+# Possibly for Swift expansion?? Idk, look into when the time comes.
+# extends cpp
+extends rb, ruby, ru
+
+# Put ruby syntax highlighting
+snippet ruby "" t
+
+{% highlight ruby linenos %}
+${1}${VISUAL:# Code goes here!}
+{% endhighlight %}
+${0}
+endsnippet
+
+
+# Put ruby syntax highlighting
+snippet ruby-num
+
+{% highlight ruby %}
+${1}${VISUAL:# Code goes here!} `!v ':%s/^/line('.')/'`
+{% endhighlight %}
+${0}
+endsnippet
+
+snippet "pr?o?j?" "" r
+---
+layout: post
+title:  "${0}"
+date:   `date "+%Y-%m-%d% %H:%M:%S"`
+categories: projects
+---
+endsnippet
+
+snippet num
+`printf('%-4d', line('.'))`${VISUAL}
+endsnippet
+
+snippet url "Add a Jekyll url from projects" i
+{% post_url projects/${0} %}
+endsnippet

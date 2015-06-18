@@ -69,6 +69,8 @@ Plugin 'kchmck/vim-coffee-script'
 Plugin 'feross/standard'
 " Utilisnips for vim
 Plugin 'SirVer/ultisnips'
+" Great collections of useful snips like `box` and `lorem`
+Plugin 'honza/vim-snippets'
 " A better Join command with delimiter options, repeatable counts, and revere
 " joining
 Plugin 'sk1418/Join'
