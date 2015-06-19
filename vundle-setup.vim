@@ -81,6 +81,8 @@ Plugin 'terryma/vim-multiple-cursors'
 Plugin 'tmhedberg/matchit'
 " gc{motion} comments out the motion, gcc comments linewise
 Plugin 'tomtom/tcomment_vim'
+" Make session management easy!
+Plugin 'tpope/vim-obsession'
 " Substituting and replacing words and changing case and conventions (to add
 " an under_score or not?) -- take a look at the doc for more.
 Plugin 'tpope/vim-abolish'
