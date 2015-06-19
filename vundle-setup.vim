@@ -135,7 +135,8 @@ Plugin 'ap/vim-css-color'
 Plugin 'ludwig/split-manpage.vim'
 " Editor Config for consistency
 Plugin 'editorconfig/editorconfig-vim'
-
+" Name says it all!
+Plugin 'tmux-plugins/vim-tmux'
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
