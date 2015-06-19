@@ -189,8 +189,4 @@ set complete=.,w,b,u,U
 " Folds
 " --------------
 
-" Save & restore folds.
-autocmd BufWinLeave ?* mkview
-autocmd BufWinEnter ?* loadview
-
 set fdc=1
