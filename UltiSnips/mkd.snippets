@@ -2,8 +2,7 @@
 # extends cpp
 extends rb, ruby, ru
 
-# Put ruby syntax highlighting
-snippet ruby "" t
+snippet ruby "Add Ruby syntax highlighting" t
 
 {% highlight ruby linenos %}
 ${1}${VISUAL:# Code goes here!}
@@ -11,22 +10,21 @@ ${1}${VISUAL:# Code goes here!}
 ${0}
 endsnippet
 
-
-# Put ruby syntax highlighting
-snippet ruby-num
-
-{% highlight ruby %}
-${1}${VISUAL:# Code goes here!} `!v ':%s/^/line('.')/'`
-{% endhighlight %}
-${0}
-endsnippet
-
-snippet "pr?o?j?" "" r
+snippet "pr?o?j?" "Make a project post" r
 ---
 layout: post
-title:  "${0}"
+title:  "${0:Post Title}"
 date:   `date "+%Y-%m-%d% %H:%M:%S"`
 categories: projects
+---
+endsnippet
+
+snippet "build?i?n?g?" "Make a building blocks post" r
+---
+layout: post
+title:  "${0:Post Title}"
+date:   `date "+%Y-%m-%d% %H:%M:%S"`
+categories: projects building_blocks
 ---
 endsnippet
 
