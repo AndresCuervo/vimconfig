@@ -81,8 +81,6 @@ Plugin 'terryma/vim-multiple-cursors'
 Plugin 'tmhedberg/matchit'
 " gc{motion} comments out the motion, gcc comments linewise
 Plugin 'tomtom/tcomment_vim'
-" Make session management easy!
-Plugin 'tpope/vim-obsession'
 " Substituting and replacing words and changing case and conventions (to add
 " an under_score or not?) -- take a look at the doc for more.
 Plugin 'tpope/vim-abolish'
@@ -105,6 +103,8 @@ Plugin 'tpope/vim-unimpaired'
 " Make many commands (a lot of Tim Pope's plugins, mainly) repeatable with
 " the . command
 Plugin 'tpope/vim-repeat'
+" Add on to the built-in netrw directory tree
+Plugin 'tpope/vim-vinegar'
 " Highlight the matching tag in XML/ HTML editing
 Plugin 'Valloric/MatchTagAlways'
 " Auto-pairs bracket, parens, and quotes
@@ -137,6 +137,11 @@ Plugin 'ludwig/split-manpage.vim'
 Plugin 'editorconfig/editorconfig-vim'
 " Name says it all!
 Plugin 'tmux-plugins/vim-tmux'
+" Make session management easy!
+Plugin 'vim-scripts/restore_view.vim'
+" Rainbow parentheses!
+Plugin 'luochen1990/rainbow'
+
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
