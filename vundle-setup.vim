@@ -140,7 +140,7 @@ Plugin 'tmux-plugins/vim-tmux'
 " Make session management easy!
 Plugin 'vim-scripts/restore_view.vim'
 " Rainbow parentheses!
-Plugin 'luochen1990/rainbow'
+Plugin 'luochen1990/rainbow' " I think this is messing up ERB templates??
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
