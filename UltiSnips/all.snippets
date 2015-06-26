@@ -11,3 +11,11 @@ var point = Point()
 point.x = 100 // sets the x property to 100
 point.y = 200 // sets the y propery to 200
 endsnippet
+
+snippet date "Insert the current date" i
+`!v strftime("%m-%d-%Y")`
+endsnippet
+
+snippet time "Insert the current time"  i
+`!v strftime("%H:%M")`${1:`!v strftime(":%S")`}
+endsnippet

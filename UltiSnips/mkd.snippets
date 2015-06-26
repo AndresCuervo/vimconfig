@@ -4,19 +4,18 @@ extends rb, ruby, ru
 
 snippet ruby "Add Ruby syntax highlighting" t
 
-{% highlight ruby linenos %}
+~~~ ruby
 ${1}${VISUAL:# Code goes here!}
-{% endhighlight %}
+~~~
 ${0}
 endsnippet
 
 snippet "pr?o?j?" "Make a project post" r
 ---
-layout: post
-title:  "${0:Post Title}"
+title:  "${1:Post Title}"
 date:   `date "+%Y-%m-%d% %H:%M:%S"`
 categories: projects
----
+---${0}
 endsnippet
 
 snippet "build?i?n?g?" "Make a building blocks post" r
@@ -34,4 +33,8 @@ endsnippet
 
 snippet url "Add a Jekyll url from projects" i
 {% post_url projects/${0} %}
+endsnippet
+
+snippet conv-webmd ""
+/class=""€klcodeVndV/\/fig	ruby	jk/\/td/\/fig€kb€kb€kb€kb€kb€kbV/\/figdj
 endsnippet
