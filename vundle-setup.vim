@@ -20,7 +20,9 @@ Plugin 'AndrewRadev/switch.vim'
 Plugin 'bling/vim-airline'
 " Extends the * searching for granular visual selections
 Plugin 'bronson/vim-visual-star-search'
-" Jade syntx
+" Ruby syntax
+Plugin 'vim-ruby/vim-ruby'
+" Jade syntax
 Plugin 'digitaltoad/vim-jade'
 " JSON syntax
 Plugin 'elzr/vim-json'
@@ -32,7 +34,7 @@ Plugin 'godlygeek/tabular'
 Plugin 'groenewege/vim-less'
 " CSS3 Syntax
 Plugin 'hail2u/vim-css3-syntax'
-" Define custom textobjects easily
+" Define custom text objects easily
 Plugin 'kana/vim-textobj-user'
 " Auto watches files
 Plugin 'kballenegger/vim-autoreadwatch'
@@ -103,6 +105,8 @@ Plugin 'tpope/vim-unimpaired'
 " Make many commands (a lot of Tim Pope's plugins, mainly) repeatable with
 " the . command
 Plugin 'tpope/vim-repeat'
+" Now just use :Bundle to call bundler from inside vim!
+Plugin 'tpope/vim-bundler'
 " Add on to the built-in netrw directory tree
 Plugin 'tpope/vim-vinegar'
 " Highlight the matching tag in XML/ HTML editing
@@ -141,6 +145,8 @@ Plugin 'tmux-plugins/vim-tmux'
 Plugin 'vim-scripts/restore_view.vim'
 " Rainbow parentheses!
 Plugin 'luochen1990/rainbow' " I think this is messing up ERB templates??
+" Live reload TeX documents!
+Plugin 'xuhdev/vim-latex-live-preview'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
