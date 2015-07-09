@@ -98,11 +98,10 @@ set hlsearch   " Highlight search results
 set wildignore+=*.o,*.obj,*.exe,*.so,*.dll,*.pyc,.svn,.hg,.bzr,.git,
             \.sass-cache,*.class,*.scssc,*.cssc,sprockets%*,*.lessc,*/node_modules/*,
             \rake-pipeline-*
-" Anzi Search statusline
-set statusline=%{anzu#search_status()}
 
 " Allow visual mode to search with * (forward-looking) and # (backward-looking)
 " Taken from:
+"
 " http://got-ravings.blogspot.com/2008/07/vim-pr0n-visual-search-mappings.html
 function! s:VSetSearch()
     let temp = @@
