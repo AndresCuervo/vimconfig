@@ -8,12 +8,6 @@
 " Color
 " ---------------
 set background=dark
-colorscheme jellybeans
-" colorscheme seoul256 " Really nice, but the overall low-contrast feel is
-" really stifling for me to read my code, I prefer jellybeans' readability.
-" let g:seoul256_background = 234
-" let g:solarized_termtrans = 1
-" let g:solarized_underline = 0
 
 " Force 256 color mode if available
 if $TERM =~ "-256color"
