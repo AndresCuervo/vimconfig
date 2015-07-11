@@ -1,4 +1,6 @@
+" -----
 " Color
+" -----
 colorscheme 'jellybeans'
 
 " --------------
