@@ -1,3 +1,8 @@
+" -----
+" Color
+" -----
+colorscheme 'jellybeans'
+
 " --------------
 " Sytastic stuff
 " --------------
