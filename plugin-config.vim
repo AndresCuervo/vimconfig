@@ -1,7 +1,7 @@
 " -----
 " Color
 " -----
-colorscheme 'jellybeans'
+colorscheme jellybeans
 
 " --------------
 " Sytastic stuff
