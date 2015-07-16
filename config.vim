@@ -20,6 +20,8 @@ if $TERM =~ "-256color"
     set t_Co=256
 endif
 
+au BufNewFile,BufRead *.rs set filetype=rust
+
 " ---------------
 " File Locations
 " -----------------------------
