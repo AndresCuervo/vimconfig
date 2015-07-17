@@ -24,6 +24,8 @@ Plugin 'bronson/vim-visual-star-search'
 Plugin 'vim-ruby/vim-ruby'
 " Rust syntax
 Plugin 'rust-lang/rust.vim'
+" Swift syntax
+Plugin 'toyamarinyon/vim-swift'
 " Jade syntax
 Plugin 'digitaltoad/vim-jade'
 " JSON syntax
