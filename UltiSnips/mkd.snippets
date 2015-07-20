@@ -3,17 +3,22 @@
 extends rb, ruby, ru
 
 snippet ruby "Add Ruby syntax highlighting" t
-
 ~~~ ruby
 ${1}${VISUAL:# Code goes here!}
-~~~
-${0}
+~~~${0}
+endsnippet
+
+
+snippet swift "Add Swift syntax highlighting" t
+~~~ swift
+${1}${VISUAL:# Code goes here!}
+~~~${0}
 endsnippet
 
 snippet "pr?o?j?" "Make a project post" r
 ---
-title:  "${1:Post Title}"
-date:   `date "+%Y-%m-%d% %H:%M:%S"`
+title: "${1:Post Title}"
+date: `date "+%Y-%m-%d% %H:%M:%S"`
 categories: projects
 ---${0}
 endsnippet
@@ -21,8 +26,8 @@ endsnippet
 snippet "build?i?n?g?" "Make a building blocks post" r
 ---
 layout: post
-title:  "${0:Post Title}"
-date:   `date "+%Y-%m-%d% %H:%M:%S"`
+title: "${0:Post Title}"
+date: `date "+%Y-%m-%d% %H:%M:%S"`
 categories: projects building_blocks
 ---
 endsnippet
@@ -37,4 +42,24 @@ endsnippet
 
 snippet conv-webmd ""
 /class=""€klcodeVndV/\/fig	ruby	jk/\/td/\/fig€kb€kb€kb€kb€kb€kbV/\/figdj
+endsnippet
+
+snippet title "make a title"
+---
+title: "${1:Post Title}"
+---${0}
+endsnippet
+
+snippet note "make a note"
+<div class="note">
+${VISUAL:${1:Note Goes Here}
+</div>${0}
+endsnippet
+
+snippet bold "make visual selection bolded" i
+**${VISUAL}**${0}
+endsnippet
+
+snippet "itali?c?s?" "place backticks around a visual selection" ir
+_${VISUAL}_${0}
 endsnippet
