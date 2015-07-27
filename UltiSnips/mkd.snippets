@@ -46,20 +46,28 @@ endsnippet
 
 snippet title "make a title"
 ---
-title: "${1:Post Title}"
+title: ${1:Post Title}
 ---${0}
 endsnippet
 
 snippet note "make a note"
 <div class="note">
-${VISUAL:${1:Note Goes Here}
+${1:${VISUAL}:Note Goes Here}
 </div>${0}
 endsnippet
 
 snippet bold "make visual selection bolded" i
-**${VISUAL}**${0}
+**${1:${VISUAL}}**${0}
 endsnippet
 
 snippet "itali?c?s?" "place backticks around a visual selection" ir
-_${VISUAL}_${0}
+_${1:${VISUAL}}_${0}
+endsnippet
+
+snippet "striket?h?r?o?u?g?h?" "place backticks around a visual selection" ir
+~~${1:${VISUAL}}~~${0}
+endsnippet
+
+snippet "link" "place backticks around a visual selection" ir
+[${1:${VISUAL}}](${2})${0}
 endsnippet
