@@ -54,9 +54,9 @@ set history=300         " Number of things to remember in history.
 set cf                 " Enable error files & error jumping, this is what makes prompt on exit!
 set clipboard=unnamed " Yanks go on clipboard instead.
 set autowrite          " Writes on make/shell commands
-set shell=zsh\ -i
 set ttimeout
 set ttimeoutlen=100    " Time to wait for a command (after leader for example).
+
 set formatoptions=crql
 set nrformats= " Disable Vim's default (oct, hex), which make 07 an octal.
 set iskeyword+=\$,-   " Add extra characters that are valid parts of variables
