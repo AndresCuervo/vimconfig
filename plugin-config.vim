@@ -1,8 +1,10 @@
 " -----
 " Color
 " -----
-let g:seoul256_background = 235
+" let g:seoul256_background = 235
 colorscheme seoul256
+" colorscheme jellybeans
+" colorscheme monokai
 
 " --------------
 " Sytastic stuff
@@ -65,3 +67,6 @@ let g:livepreview_previewer = 'open -a Preview'
 
 " Anzi Search statusline
 set statusline=%{anzu#search_status()}
+
+" JSON.vim, turn off quote concealment
+let g:vim_json_syntax_conceal = 0
