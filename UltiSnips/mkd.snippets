@@ -52,7 +52,7 @@ endsnippet
 
 snippet note "make a note"
 <div class="note">
-${1:${VISUAL}:Note Goes Here}
+${1:${VISUAL}}
 </div>${0}
 endsnippet
 
@@ -70,4 +70,14 @@ endsnippet
 
 snippet "link" "place backticks around a visual selection" ir
 [${1:${VISUAL}}](${2})${0}
+endsnippet
+
+snippet "newblog" "front matter for a new blog post" ir
+---
+title: ${1}
+description: ${2}
+date: `date "+%Y-%m-%d"` ${3}
+tags: ${4}
+---
+${0}
 endsnippet
