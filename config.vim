@@ -48,6 +48,11 @@ endif
 " Behaviors
 " ---------------
 syntax enable
+au BufRead,BufNewFile *.md set spell
+au BufRead,BufNewFile *.mkd set spell
+au BufRead,BufNewFile *.markdown set spell
+au BufRead,BufNewFile README set spell
+au BufRead,BufNewFile *.txt set spell
 set wildmenu            " visual autocomplete for command menu
 set hidden             " Change buffer - without saving
 set history=300         " Number of things to remember in history.
