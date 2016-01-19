@@ -12,3 +12,15 @@ ${4:-# Haml example goes here.}
 */
 endsnippet
 
+snippet p5 "Make some default p5.js boilerplate" i
+var bg = 0
+
+function setup() {
+	createCanvas(600, 600);
+}
+
+function draw() {
+	background(bg);
+	${1:// Draw some stuff!}
+}
+endsnippet
