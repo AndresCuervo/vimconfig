@@ -2,9 +2,11 @@
 " Color
 " -----
 " let g:seoul256_background = 235
-colorscheme seoul256
+" colorscheme seoul256
 " colorscheme jellybeans
 " colorscheme monokai
+" colorscheme molokai
+colorscheme Tomorrow-Night-Blue
 
 " --------------
 " Sytastic stuff
@@ -22,7 +24,7 @@ let g:syntastic_error_symbol = "✗"
 let g:syntastic_warning_symbol = "⚠"
 
 " ---------------
-" Airline Setings
+" Airline Settings
 " --------------
 " Add vim-airline buffer list to the top of Vim
 let g:airline#extensions#tabline#enabled = 1
