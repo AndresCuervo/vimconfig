@@ -33,7 +33,6 @@ set undofile
 set ruler          " Ruler on
 set number         " Line numbers on so I can easily jump with <line#>gg
 "set relativenumber " Lune numbers change to show how far away they are from the current line
-set cursorline
 set nowrap         " Line wrapping off
 set laststatus=2   " Always show the statusline
 set cmdheight=2    " Make the command area two lines high
@@ -118,6 +117,7 @@ vnoremap # :<C-u>call <SID>VSetSearch()<CR>??<CR>)
 " Visual
 " ---------------
 highlight LineNr ctermfg=30
+set cursorline
 highlight cursorline term=underline cterm=underline
 set showmatch   " Show matching brackets.
 set matchtime=2 " How many tenths of a second to blink
