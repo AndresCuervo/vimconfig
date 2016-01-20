@@ -135,6 +135,9 @@ Plugin 'chriskempson/vim-tomorrow-theme'
 Plugin 'junegunn/seoul256.vim'
 Plugin 'vim-scripts/ecostation'
 Plugin 'sickill/vim-monokai'
+Plugin 'tomasr/molokai'
+Plugin 'NLKNguyen/papercolor-theme'
+
 " Flappy bird in vim :)
 Plugin 'mattn/flappyvird-vim'
 " Make hex color codes pretty according to their corresponding color!
