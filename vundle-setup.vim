@@ -154,6 +154,9 @@ Plugin 'vim-scripts/restore_view.vim'
 Plugin 'luochen1990/rainbow' " I think this is messing up ERB templates??
 " Live reload TeX documents!
 Plugin 'xuhdev/vim-latex-live-preview'
+" Distraction free writing in vim
+Plugin 'junegunn/goyo.vim'
+Plugin 'junegunn/limelight.vim'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
