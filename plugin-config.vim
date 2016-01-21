@@ -4,9 +4,9 @@
 " let g:seoul256_background = 235
 " colorscheme seoul256
 " colorscheme jellybeans
-" colorscheme monokai
+colorscheme monokai
 " colorscheme molokai
-colorscheme Tomorrow-Night-Blue
+" colorscheme Tomorrow-Night-Blue
 
 " --------------
 " Sytastic stuff
