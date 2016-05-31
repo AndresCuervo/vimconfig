@@ -5,7 +5,6 @@
 " colorscheme seoul256
 " colorscheme jellybeans
 colorscheme monokai
-" colorscheme molokai
 " colorscheme Tomorrow-Night-Blue
 
 " --------------
