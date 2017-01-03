@@ -2,9 +2,9 @@
 " Color
 " -----
 " let g:seoul256_background = 235
-" colorscheme seoul256
+colorscheme seoul256
 " colorscheme jellybeans
-colorscheme monokai
+" colorscheme monokai
 " colorscheme Tomorrow-Night-Blue
 
 " --------------
@@ -21,6 +21,9 @@ let g:syntastic_check_on_open = 1
 " Use custom error and warning symbols to Syntastic
 let g:syntastic_error_symbol = "✗"
 let g:syntastic_warning_symbol = "⚠"
+
+" Set Python default to Python3
+let g:syntastic_python_python_exec = '/path/to/python3'
 
 " ---------------
 " Airline Settings
