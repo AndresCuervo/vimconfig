@@ -113,6 +113,9 @@ Plugin 'tpope/vim-repeat'
 Plugin 'tpope/vim-bundler'
 " Add on to the built-in netrw directory tree
 Plugin 'tpope/vim-vinegar'
+" The next two come as a pair
+Plugin 'tpope/vim-sexp-mappings-for-regular-people'
+Plugin 'guns/vim-sexp'
 " Highlight the matching tag in XML/ HTML editing
 Plugin 'Valloric/MatchTagAlways'
 " Auto-pairs bracket, parens, and quotes
