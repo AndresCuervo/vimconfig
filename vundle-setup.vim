@@ -17,7 +17,8 @@ Plugin 'gmarik/Vundle.vim'
 " the fly. Consider reading the docs when you get the chance!
 Plugin 'AndrewRadev/switch.vim'
 " Airline!
-Plugin 'bling/vim-airline'
+Plugin 'vim-airline/vim-airline'
+Plugin 'vim-airline/vim-airline-themes'
 " Extends the * searching for granular visual selections
 Plugin 'bronson/vim-visual-star-search'
 " Ruby syntax
@@ -43,7 +44,7 @@ Plugin 'kana/vim-textobj-user'
 " Auto watches files
 Plugin 'kballenegger/vim-autoreadwatch'
 " Fuzzy file search with Ctrl P
-Plugin 'kien/ctrlp.vim'
+Plugin 'ctrlpvim/ctrlp.vim'
 " Emmet HTML expansion.
 Plugin 'mattn/emmet-vim'
 " Easy gist creation/ editing from vim!
@@ -114,8 +115,11 @@ Plugin 'tpope/vim-bundler'
 " Add on to the built-in netrw directory tree
 Plugin 'tpope/vim-vinegar'
 " The next two come as a pair
-Plugin 'tpope/vim-sexp-mappings-for-regular-people'
-Plugin 'guns/vim-sexp'
+" Plugin 'tpope/vim-sexp-mappings-for-regular-people'
+" Plugin 'guns/vim-sexp'
+" Fireplace supports a Clojure REPL from Vim :D
+Plugin 'tpope/vim-fireplace'
+Plugin 'tpope/vim-salve'
 " Highlight the matching tag in XML/ HTML editing
 Plugin 'Valloric/MatchTagAlways'
 " Auto-pairs bracket, parens, and quotes
