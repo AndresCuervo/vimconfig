@@ -117,6 +117,8 @@ Plugin 'tpope/vim-vinegar'
 " The next two come as a pair
 " Plugin 'tpope/vim-sexp-mappings-for-regular-people'
 " Plugin 'guns/vim-sexp'
+" Implements: https://shaunlebron.github.io/parinfer/
+Plugin 'bhurlow/vim-parinfer'
 " Fireplace supports a Clojure REPL from Vim :D
 Plugin 'tpope/vim-fireplace'
 Plugin 'tpope/vim-salve'
