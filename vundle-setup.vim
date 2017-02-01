@@ -52,7 +52,8 @@ Plugin 'mattn/gist-vim'
 " Show vim's undotree in a really neat way with :UndotreeShow|Hide
 Plugin 'mbbill/undotree'
 " Vim gutter gets Git symbols (signs), v pretty
-Plugin 'mhinz/vim-signify'
+" Plugin 'mhinz/vim-signify'
+Plugin 'airblade/vim-gitgutter'
 " Vim Indent Guides with <leader>ig
 Plugin 'nathanaelkane/vim-indent-guides'
 " Alters vim search with true incremental search and
@@ -117,8 +118,6 @@ Plugin 'tpope/vim-vinegar'
 " The next two come as a pair
 " Plugin 'tpope/vim-sexp-mappings-for-regular-people'
 " Plugin 'guns/vim-sexp'
-" Implements: https://shaunlebron.github.io/parinfer/
-Plugin 'bhurlow/vim-parinfer'
 " Fireplace supports a Clojure REPL from Vim :D
 Plugin 'tpope/vim-fireplace'
 Plugin 'tpope/vim-salve'
