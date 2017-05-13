@@ -97,6 +97,7 @@ Plugin 'tpope/vim-abolish'
 Plugin 'tpope/vim-eunuch'
 " Kickass git wrapper for vim with :Git {git commands}
 Plugin 'tpope/vim-fugitive'
+Plugin 'tpope/vim-rhubarb'
 " Vim runtime files for Haml, Sass, and SCSS
 Plugin 'tpope/vim-haml'
 " Change single to double quote with cs'" or surround a word with quotes like
