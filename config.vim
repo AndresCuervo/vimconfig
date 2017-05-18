@@ -17,7 +17,7 @@ au BufNewFile,BufRead *.rs set filetype=rust
 " ---------------
 " File Locations
 " -----------------------------
-set autochdir
+" set autochdir
 set backup
 set backupdir=~/.vim/.backup// " Double // causes backups to use full file path
 set directory=~/.vim/.tmp//
