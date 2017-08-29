@@ -75,11 +75,16 @@ set statusline=%{anzu#search_status()}
 " JSON.vim, turn off quote concealment
 let g:vim_json_syntax_conceal = 0
 
-" ------
-" CtrlP Setup
-" ------
+" From Nate's vimrc!
+" https://github.com/nwjsmith/dotfiles/blob/ba82a88ba874b953c0e38a127bda7dc8a109faf7/vimrc#L74-L84
+" Use the ripgrep if available
 if executable('rg')
-    set grepprg=rg\ --color=never
-    let g:ctrlp_user_command = 'rg %s --files --color=never --glob ""'
-    let g:ctrlp_use_caching = 0
+  " Use rg instead of grep
+  set grepprg=rg\ --column\ --color=never
+
+  " Use rg for ctrlp for listing files
+  let g:ctrlp_user_command = 'rg %s --files --color=never --glob ""'
+
+  " rg is fast enough that we don't need caching
+  let g:ctrlp_use_caching = 0
 endif

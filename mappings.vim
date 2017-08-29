@@ -60,7 +60,9 @@ nmap * <Plug>(anzu-star-with-echo)
 nmap # <Plug>(anzu-sharp-with-echo)
 nmap <Esc><Esc> <Plug>(anzu-clear-search-status)
 
-" This function goes to the current
+" This function goes to the current buffer's directory, which is nice when you
+" need to make a new file in current working directory
+"
 " Help from: http://vim.wikia.com/wiki/Set_working_directory_to_the_current_file
 function! GoToCurrentFileDir()
     :cd %:p:h
@@ -68,3 +70,6 @@ function! GoToCurrentFileDir()
 endfunction
 
 command! GoToCurrentFileDir execute GoToCurrentFileDir()
+
+" Inspired by: https://gist.github.com/csswizardry/9a33342dace4786a9fee35c73fa5deeb
+nnoremap <C-p> :e **/*

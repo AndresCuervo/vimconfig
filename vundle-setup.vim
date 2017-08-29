@@ -87,6 +87,9 @@ Plugin 'sk1418/Join'
 Plugin 'terryma/vim-multiple-cursors'
 " Extended % matching for HTML, LaTeX, and many other languages
 Plugin 'tmhedberg/matchit'
+
+Plugin 'cespare/vim-toml'
+
 " gc{motion} comments out the motion, gcc comments linewise
 Plugin 'tomtom/tcomment_vim'
 " Substituting and replacing words and changing case and conventions (to add

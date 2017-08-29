@@ -17,7 +17,7 @@ au BufNewFile,BufRead *.rs set filetype=rust
 " ---------------
 " File Locations
 " -----------------------------
-" set autochdir
+set autochdir
 set backup
 set backupdir=~/.vim/.backup// " Double // causes backups to use full file path
 set directory=~/.vim/.tmp//
@@ -33,7 +33,10 @@ set undofile
 set ruler          " Ruler on
 set number         " Line numbers on so I can easily jump with <line#>gg
 "set relativenumber " Lune numbers change to show how far away they are from the current line
-set nowrap         " Line wrapping off
+" set nowrap         " Line wrapping off
+set breakindent
+let &showbreak = '↳ '
+set wrap
 set laststatus=2   " Always show the statusline
 set cmdheight=2    " Make the command area two lines high
 set encoding=utf-8
@@ -98,6 +101,22 @@ set hlsearch   " Highlight search results
 set wildignore+=*.o,*.obj,*.exe,*.so,*.dll,*.pyc,.svn,.hg,.bzr,.git,
             \.sass-cache,*.class,*.scssc,*.cssc,sprockets%*,*.lessc,*/node_modules/*,
             \rake-pipeline-*
+
+" From: https://github.com/kien/ctrlp.vim
+set wildignore+=*/tmp/*,*.so,*.swp,*.zip     " MacOSX/Linux
+set wildignore+=*\\tmp\\*,*.swp,*.zip,*.exe  " Windows
+
+let g:ctrlp_custom_ignore = '\v[\/]\.(git|hg|svn)$'
+let g:ctrlp_custom_ignore = {
+  \ 'dir':  '\v[\/]\.(git|hg|svn)$',
+  \ 'file': '\v\.(exe|so|dll)$',
+  \ }
+
+" From: https://gist.github.com/csswizardry/9a33342dace4786a9fee35c73fa5deeb
+" Don't offer to open certain files/directories
+set wildignore+=*.bmp,*.gif,*.ico,*.jpg,*.png,*.ico
+set wildignore+=*.pdf,*.psd
+set wildignore+=node_modules/*,bower_components/*
 
 " Allow visual mode to search with * (forward-looking) and # (backward-looking)
 " Taken from:
