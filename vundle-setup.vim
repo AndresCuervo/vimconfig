@@ -74,7 +74,7 @@ Plugin 'Raimondi/delimitMate'
 " Really fast searching!
 Plugin 'rking/ag.vim'
 " Gr8 syntax highlighting
-Plugin 'scrooloose/syntastic'
+" Plugin 'scrooloose/syntastic'
 " Coffescript & other JS support
 Plugin 'kchmck/vim-coffee-script'
 " JS Syntax Checker
