@@ -88,3 +88,17 @@ if executable('rg')
   " rg is fast enough that we don't need caching
   let g:ctrlp_use_caching = 0
 endif
+
+" -------
+" Javascript stuff syntax
+" -------
+" Turn on Flow plugin for pangloss/vim-javascript
+let g:javascript_plugin_flow = 1
+" Require .esx file extension?
+let g:jsx_ext_required = 0
+
+" Invert default Ale linting behavior?
+" For now, no, but nice to know this is here (ale on save rather than on each
+" keystroke) if I need it!
+" let g:ale_lint_on_save = 1
+" let g:ale_lint_on_text_changed = 0

@@ -31,6 +31,8 @@ Plugin 'toyamarinyon/vim-swift'
 Plugin 'digitaltoad/vim-jade'
 " JSON syntax
 Plugin 'elzr/vim-json'
+" Asynchronous linting for Vim (Helpful for making ESlint non-blocking)
+Plugin 'w0rp/ale'
 " Tabs!!!
 Plugin 'ervandew/supertab'
 " Tabs!!!
@@ -63,6 +65,8 @@ Plugin 'osyo-manga/vim-anzu'
 Plugin 'othree/html5.vim'
 " Javascript syntax
 Plugin 'pangloss/vim-javascript'
+" Javascript JSX templates
+Plugin 'mxw/vim-jsx'
 " Markdown syntax
 Plugin 'plasticboy/vim-markdown'
 " Autocomplete brackets, parens, and quotes
