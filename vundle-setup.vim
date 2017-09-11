@@ -69,6 +69,7 @@ Plugin 'pangloss/vim-javascript'
 Plugin 'mxw/vim-jsx'
 " Markdown syntax
 Plugin 'plasticboy/vim-markdown'
+Plugin 'suan/vim-instant-markdown'
 " Autocomplete brackets, parens, and quotes
 Plugin 'Raimondi/delimitMate'
 " Really fast searching!
