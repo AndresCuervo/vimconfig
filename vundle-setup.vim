@@ -67,6 +67,8 @@ Plugin 'othree/html5.vim'
 Plugin 'pangloss/vim-javascript'
 " Javascript JSX templates
 Plugin 'mxw/vim-jsx'
+" Flow support :)
+Plugin 'flowtype/vim-flow'
 " Markdown syntax
 Plugin 'plasticboy/vim-markdown'
 Plugin 'suan/vim-instant-markdown'
