@@ -161,6 +161,8 @@ else
 endif
 
 
+Plug 'machakann/vim-highlightedyank'
+
 
 " Unmanaged plugin (manually installed and updated)
 " Plug '~/my-prototype-plugin'
