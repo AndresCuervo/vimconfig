@@ -1,4 +1,9 @@
 #! /bin/sh
 
-git clone https://github.com/gmarik/Vundle.vim.git ./bundle/Vundle.vim
-vim -u vundle-setup.vim "+PluginInstall" "+qall"
+brew install neovim
+
+curl -fLo ~/.local/share/nvim/site/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+ln -s ~/.vim/init.vim ~/.config/nvim/init.vim
+ln -s ~/.vim/vimrc ~/.vimrc
+
+nvim "+PlugInstall" "+qall"

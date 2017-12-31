@@ -97,18 +97,19 @@ let g:javascript_plugin_flow = 1
 " Require .esx file extension?
 let g:jsx_ext_required = 0
 
-" Invert default Ale linting behavior?
-" For now, no, but nice to know this is here (ale on save rather than on each
-" keystroke) if I need it!
 let g:ale_lint_on_save = 1
-let g:ale_lint_on_text_changed = 0
-
-" From: https://github.com/w0rp/ale#2ii-fixing
-" Put this in vimrc or a plugin file of your own.
-let g:ale_fixers = {
-\   'javascript': ['prettier', 'eslint'],
+let g:ale_lint_on_text_changed = 'never'
+" disable the Ale HTML linters
+let g:ale_linters = {
+\   'html': [],
 \}
+let g:ale_set_highlights = 0
 
-" Set this setting in vimrc if you want to fix files automatically on save.
-" This is off by default.
-let g:ale_fix_on_save = 1
+let g:ale_fixers = {}
+let g:ale_fixers['javascript'] = [
+\ 'prettier_eslint'
+\]
+let g:ale_fix_on_save = 0
+let g:ale_javascript_prettier_options = '--single-quote'
+
+let g:deoplete#enable_at_startup = 1
