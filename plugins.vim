@@ -163,6 +163,7 @@ endif
 
 Plug 'machakann/vim-highlightedyank'
 
+Plug 'vim-syntastic/syntastic'
 
 " Unmanaged plugin (manually installed and updated)
 " Plug '~/my-prototype-plugin'
